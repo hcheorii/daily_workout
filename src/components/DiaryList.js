@@ -3,6 +3,7 @@ import DiaryItem from "./DiaryItem";
 import "./DiaryList.css";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+
 const DiaryList = ({ data }) => {
     const nav = useNavigate();
     const [sortType, setSortType] = useState("latest");
@@ -31,7 +32,7 @@ const DiaryList = ({ data }) => {
                 </select>
                 <Button
                     onClick={() => nav("/new")}
-                    text={"새 일기 쓰기"}
+                    text={"새 운동일지 쓰기"}
                     type={"POSITIVE"}
                 />
             </div>
