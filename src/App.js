@@ -70,6 +70,7 @@ function App() {
     };
 
     const onUpdate = (id, createdDate, emotionId, content) => {
+        console.log(id);
         dispatch({
             type: "UPDATE",
             id,
@@ -77,6 +78,7 @@ function App() {
             emotionId,
             content,
         });
+        console.log(id);
     };
 
     const onDelete = (id) => {
