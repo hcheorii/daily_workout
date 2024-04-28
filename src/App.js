@@ -38,6 +38,7 @@ function reducer(state, action) {
         case "CREATE":
             return [action.data, ...state];
         case "UPDATE":
+            console.log(action.data);
             return state.map((item) =>
                 String(item.id) === String(action.data.id) ? action.data : item
             );
@@ -73,10 +74,12 @@ function App() {
         console.log(id);
         dispatch({
             type: "UPDATE",
-            id,
-            createdDate,
-            emotionId,
-            content,
+            data: {
+                id: id,
+                createdDate: createdDate,
+                emotionId: emotionId,
+                content: content,
+            },
         });
         console.log(id);
     };
