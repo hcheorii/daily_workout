@@ -34,7 +34,7 @@ const Diary = () => {
                 rightChild={
                     <Button
                         text={"수정하기"}
-                        onCLick={() => nav(`/edit/${params.id}`)}
+                        onClick={() => nav(`/edit/${params.id}`)}
                     />
                 }
             />
