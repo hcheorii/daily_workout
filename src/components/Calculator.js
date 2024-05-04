@@ -24,7 +24,7 @@ const Calculator = () => {
                 onChange={handleChangeWeight}
             />
             <button text="계산하기" onClick={calculateORM}>
-                Calculate
+                계산하기
             </button>
             <span className="result">
                 {result ? <p>{result}kg</p> : <p>원알엠</p>}
